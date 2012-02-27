@@ -2,9 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>A Generic Page</title>
-    <meta name="description" content="something good should go here">
-    <meta name="author" content="your name should go here">
+    <title>University of Louisiana - Lafayette</title>
+    <meta name="description" content="UL Lafayette Homepage">
+    <meta name="author" content="Adam Powers, Jenny Lyons, Allan Kwan">
+    
+    <!--  jQuery http://jquery.com/ -->
+    <script src="js/lib/jquery-1.7.1.min.js"></script>
+
+    <!-- Your Javascripts -->
+    <script src="js/main.js"></script>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -12,35 +18,89 @@
     <![endif]-->
 
     <!-- Base Stylsheets http://twitter.github.com/bootstrap/ -->
-    <link rel="stylesheet" href="stylesheets/lib/bootstrap.css" >
-    <link rel="stylesheet" href="stylesheets/lib/jquery.fancybox.css" >
+    <link rel="stylesheet/less" type="text/css" href="css/lib/bootstrap.less" >
+    <link rel="stylesheet" href="css/lib/jquery.fancybox.css" >
 
-
-    <!-- Your Stylesheets -->
-    <link rel="stylesheet" href="stylesheets/main.css" >
-
-
-    <!--  jQuery http://jquery.com/ -->
-    <script src="javascripts/lib/jquery-1.7.1.min.js"></script>
-
+    <!-- LESS Stylesheet -->
+    <link rel="stylesheet/less" type="text/css" href="css/main.css">
+    
     <!-- Bootstrap Javascripts http://twitter.github.com/bootstrap/javascript.html -->
-    <script src="javascripts/lib/bootstrap.js"></script>
+    <script src="js/lib/bootstrap.js"></script>
 
     <!-- Fancybox Lightbox http://fancyapps.com/fancybox/#examples -->
-    <script src="javascripts/lib/jquery.fancybox.js"></script>
+    <script src="js/lib/jquery.fancybox.js"></script>
 
+    <!-- LESS CSS (lesscss.org) -->
+    <script src="js/lib/less.js" type="text/javascript"></script>
+    
+    <!-- Nivo Slider http://nivo.dev7studios.com -->
+    <link rel="stylesheet" href="css/lib/nivo-slider.css" type="text/css" media="screen" />
+	<script src="js/lib/jquery.nivo.slider.pack.js" type="text/javascript"></script>
 
-    <!-- Your Javascripts -->
-    <script src="javascripts/main.js"></script>
+    
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,300italic,300,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 
+    
   </head>
 
-  <body>
-    <div class="container">
+<body> <!-- ------------------------------------------------------------- -->
 
-      Put Stuff Here
+<div id="backgrounds" class="canvas">
+    <img src="img/bg.png" />
+    <img src="img/bg2.png" />
+</div>
 
-    </div> <!-- end container -->
+<div class="container">                <!-- Container START  -->
+  
+    <div id="navRow">                   <!-- Nav row START -->
+         <h1>University of Louisana at Lafayette</h1>
+        <img src="img/logo.png" />
 
-  </body>
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                 <ul class="nav">
+    <li class="active">
+    <a href="#">Home</a>
+    </li>
+    <li><a href="#">Current Students</a></li>
+    <li><a href="#">Prospective Students</a></li>
+    <li><a href="#">Faculty & Staff</a></li>
+    <li><a href="#">Parents and Family</a></li>
+    <li><a href="#" class="ulink">U-Link</a></li>
+
+    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>                        
+
+
+
+                      <!-- Nav row END -->
+
+
+
+    <div id="mainRow">                  <!-- Main row START -->
+		<div id="navCol">
+            <ul class="nav nav-list">
+    
+               
+                <li><a href="#">About</a></li>
+                <li><a href="#">Academics</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">Athletics</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Student Life</a></li>
+            </ul>
+        </div>
+
+    </div>                                          <!-- Main row END -->        
+
+   </div>                                  <!-- Container END -->
+
+</body> <!-- ------------------------------------------------------------ -->
 </html>
