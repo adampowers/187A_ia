@@ -152,21 +152,13 @@ ul.nav li a {
     color: white;
     z-index: 2;
 
+
 }
 
-#navCol h1 {
-    
+#navCol ul.nav  {
+    text-align: right;
 }
-#navCol2 {
-    position: absolute;
-    width: 400px;
-    top: 0;
-    left: 50%;
-    margin-left: -500px;
-    height: 100%;
-    background-color: rgba(0,0,0,.75);
-    z-index: 0;
-}
+
 
 h1 {
     font-family: 'Lato', Helvetica, Arial, sans-serif;

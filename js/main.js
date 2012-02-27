@@ -5,8 +5,8 @@ $(document).ready(function() {
  	pauseTime: 10000,
  	directionNav: false,
  	controlNav: false
-
-
  });
+
+ $('.dropdown-toggle').dropdown()
   
 });
