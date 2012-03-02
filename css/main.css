@@ -112,48 +112,48 @@
 
 /* OVERALL LAYOUT *****/
 
-html, body {
+
+html,body {
 	color: #333;
-	height: 100%;
+    overflow: auto;
 	width: 100%;
     min-width: 1000px;
     background: url('../img/bg.png') fixed bottom right;
     background-size: 100%;
+    min-height: 100%;
+    height: 100%;
+    
 }
-	
 
 #containerWrap {
+    left: 0;
+    right: 0;
     height: 100%;
     width: 960px;
     background-color: rgba(255,255,255,.7);
-
+    
 }
 
 #containerMain {
     left: 0;
     right: 0;
-    margin-top: 40px;
-    background-color: #eef;
-    padding-top: 140px;
+    margin-top: -130px;
+    background-color: #fff;
     height: 100%;
-
+    
+    
 }
 
 #titleRow {
-    position: absolute;
-    top: 40px;
-    margin-top: 10px;
+    margin-top: 50px;
     margin-left: 20px;
     width: 960px;
 }
 
 #mainRow {
+    padding-top: 120px;
     margin-top: 100px;
     width: 100%;
-    height: 100%;
-}
-
-#slider img {
     height: 100%;
 }
 
@@ -196,6 +196,9 @@ li.tab7, li.tab7.active > .noshadow { background-color: @tab7; }
 
 .nav-tabs > li {
     height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+
 }
 
 .nav-tabs.shadow, .fakeshadow {
@@ -204,6 +207,13 @@ li.tab7, li.tab7.active > .noshadow { background-color: @tab7; }
     box-shadow: 5px 0px 5px -1px #222;
 }
 
+
+#navWrapper {
+    width: 100%;
+    margin-top: -100px;
+    position: relative;
+    margin-top: 140px;
+}
 
 #navBox {
     position: absolute;
@@ -229,8 +239,6 @@ li.tab7, li.tab7.active > .noshadow { background-color: @tab7; }
 }
 
 
-
-
 .logo {
     display: block;
     font-family: @serifFonts;
@@ -239,53 +247,34 @@ li.tab7, li.tab7.active > .noshadow { background-color: @tab7; }
     font-weight: 400;
 }
 
-h2.logo { font-size: 49px; }
-h3.logo { font-size: 39px; }
-
-
-h2,h3 {
-    font-family: @sansFonts;
-    line-height: 20px;
-    color: #222;
-}
-
-hr {
-    border-top: 1px solid #333;
-    margin-top: 10px;
-}
-
-#colRight div {
-    
-}
-
-#colLeft, #colRight {
-
-}
-
-
-
 #footer {
     .gradient1;
-    width: 960px;
-    height: 40px;
+    width: 940px;
+    height: 30px;
     font-color: white;
     margin-left: -10px;
     color: #eee;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.2em;
+    padding-top: 5px;
+    text-align: center;
+    bottom: 0;    
 }
 
-#searchBox {
-    margin-right: 10px;
+#footer a {
+    color: white;
+    text-decoration: none;
 }
 
-.span12 {
-    margin-left: 0px;
-}
+#footer a:hover { text-decoration: underline; }
 
- .span2 {
-    margin-left: 10px;
- }
+#searchBox { margin-right: 10px; }
 
+.span12 { margin-left: 0px; }
 
+.span2 { margin-left: 10px; }
 
 #tabHome {
     width: 1px;
@@ -293,13 +282,9 @@ hr {
     text-align: center;
     }
 
-#tabBar {
-    right: 0;
-}
-
+#tabBar { right: 0; }
 
 .nav-tabs > li:hover {
-    z-index: 50;
     margin-top: -10px;
 }
 
@@ -309,9 +294,9 @@ hr {
     height: 30px;
     width: 8px;
     float: right;
+    margin-right: -20px;
     z-index: 56;
     overflow: hidden;
-
 }
 
 .tab-pane {
@@ -320,16 +305,13 @@ hr {
     height: 100%;
     width: 100%;
     z-index: 55;
-
-    -webkit-box-shadow: 0px 3px 5px -2px #555;
-    -moz-box-shadow: 0px 3px 5px -2px #555;
-    box-shadow: 0px 3px 5px -2px #555;
+    -webkit-box-shadow: 0px 3px 5px -2px #000;
+    -moz-box-shadow: 0px 3px 5px -2px #000;
+    box-shadow: 0px 3px 5px -2px #000;
 }
 
 
-.nav-tabs > li:hover > .fakeshadow {
-    height: 40px;
-}
+.nav-tabs > li:hover > .fakeshadow { height: 40px; }
 
 .navbar-search .search-query {
     color: #555;
@@ -349,9 +331,7 @@ hr {
     color: #eee;
 }
 
-.navbar-search > .uneditable-input {
-    color: #333;
-}
+.navbar-search > .uneditable-input { color: #333; }
 
 a.ulink {
     background-color: rgba(0,0,0,.3);
@@ -365,7 +345,6 @@ a.ulink {
 
 }
 
-
 .tab-pane > ul > li a {
     color: white;
     font-size: 1.3em;
@@ -378,12 +357,10 @@ a.ulink {
     top: 15px;
     left: 20px;
     width: 900px;
-    
     display: inline-block;
 }
 
 .item {
-
     top: 10px;
     display: inline-block;
 }
@@ -393,6 +370,22 @@ a.ulink {
     width: 100%;
     
 }
+
+.tabbable > ul {
+    position: absolute;
+    display: inline-block;
+}
+
+.tabbable > ul > li {
+    display: inline-block;
+}
+
+.tabbable {
+    text-align: justify;
+    width: 100%;
+}
+
+
 
 .filler {
     width:100%;
@@ -410,64 +403,74 @@ a.ulink {
     margin-left: 10px;
 }
 
-#colRight > ul li {
+#colRight > ul li { margin-bottom: 10px; }
+
+#colRight a { color: @tab1; }
+
+#colRight {
+    height: 300px;
+}
+
+#colLeft > .nav {
+    margin-top: 120px;
+    padding-left: 0;
+    width: 180px;
+}
+
+
+
+.nav-list .active > a, .nav-list .active > a:hover {
+    color: @tab1;
+    background-color: white;
+}
+
+.nav-list > li > a:hover, .nav-list > li > a.active {
+    font-weight: bold;
+    background-color: White;
+}
+
+.nav-list a {
+    color: @tab1;
+    font-size: 1.2em;
+}
+
+
+#colRight p { font-family: @sansFonts; line-height: 20px; }
+
+#colRight img {
+    float: right;
+    height: 200px;
+    margin-left: 10px;
     margin-bottom: 10px;
 }
 
-#colRight a {
-    color: @tab1;
+#colRight { text-align: justify; }
+
+h2.logo { font-size: 49px; }
+h3.logo { font-size: 39px; }
+
+
+h2,h3 {
+    font-family: @sansFonts;
+    line-height: 20px;
+    color: #222;
+    margin-bottom: 10px;
 }
 
-/* PAGE CURL SHADOWS BOX http://matthamm.com/box-shadow-curl.html */
-ul.box {
-position: relative;
-z-index: 1; /* prevent shadows falling behind containers with backgrounds */
-overflow: hidden;
-list-style: none;
-margin: 0;
-padding: 0; }
+hr {
+    border-top: 1px solid #333;
+    margin-top: 10px;
+}
 
+.breadcrumb {
+    margin-top: 78px;
+    background-image: none;
+    background-color: @tab1;
+    color: white;
+    border: 0;
+}
 
-ul.box li {
-position: relative;
-float: left;
-width: 250px;
-height: 150px;
-padding: 0;
-border: 1px solid #efefef;
-margin: 0 30px 30px 0;
-background: #fff;
--webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
--moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset; 
-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset; }
-
-
-ul.box li:before,
-ul.box li:after {
-content: '';
-z-index: -1;
-position: absolute;
-left: 10px;
-bottom: 10px;
-width: 70%;
-max-width: 300px; /* avoid rotation causing ugly appearance at large container widths */
-max-height: 100px;
-height: 55%;
--webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
--moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
--webkit-transform: skew(-15deg) rotate(-6deg);
--moz-transform: skew(-15deg) rotate(-6deg);
--ms-transform: skew(-15deg) rotate(-6deg);
--o-transform: skew(-15deg) rotate(-6deg);
-transform: skew(-15deg) rotate(-6deg); }
-
-
-ul.box li:after {
-left: auto;
-right: 10px;
--webkit-transform: skew(15deg) rotate(6deg);
--moz-transform: skew(15deg) rotate(6deg);
--ms-transform: skew(15deg) rotate(6deg);
--o-transform: skew(15deg) rotate(6deg);
-transform: skew(15deg) rotate(6deg); }
+.breadcrumb li a {
+    color: white;
+    padding-left: 5px;
+}
