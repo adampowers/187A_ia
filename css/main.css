@@ -130,14 +130,14 @@ html,body {
     right: 0;
     height: 100%;
     width: 960px;
-    background-color: rgba(255,255,255,.7);
+    background-color: rgba(255,255,255,.8);
     
 }
 
 #containerMain {
     left: 0;
     right: 0;
-    margin-top: -130px;
+    margin-top: 20px;
     background-color: #fff;
     height: 100%;
     
@@ -145,20 +145,20 @@ html,body {
 }
 
 #titleRow {
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 20px;
     width: 960px;
 }
 
 #mainRow {
-    padding-top: 120px;
+    padding-top: 140px;
     margin-top: 100px;
     width: 100%;
     height: 100%;
 }
 
-#titleRow img, #titleRow h1 { display: table-cell; }
-#titleRow img { margin-left: 10px; float: left; }
+#titleRow img, #titleRow h1 { display: table-cell; margin-top: 10px;}
+#titleRow img { height: 40px; margin-left: 10px; float: left; }
 #titleRow h1 { margin-left: 20px; float: left; }
 
 
@@ -201,6 +201,7 @@ li.tab7, li.tab7.active > .noshadow { background-color: @tab7; }
 
 }
 
+
 .nav-tabs.shadow, .fakeshadow {
     -moz-box-shadow: 5px 0px 5px -1px #222;
     -webkit-box-shadow: 5px 0px 5px -1px #222;
@@ -212,7 +213,7 @@ li.tab7, li.tab7.active > .noshadow { background-color: @tab7; }
     width: 100%;
     margin-top: -100px;
     position: relative;
-    margin-top: 140px;
+    
 }
 
 #navBox {
@@ -261,6 +262,7 @@ li.tab7, li.tab7.active > .noshadow { background-color: @tab7; }
     padding-top: 5px;
     text-align: center;
     bottom: 0;    
+    margin-top: 40px;
 }
 
 #footer a {
@@ -334,15 +336,18 @@ li.tab7, li.tab7.active > .noshadow { background-color: @tab7; }
 .navbar-search > .uneditable-input { color: #333; }
 
 a.ulink {
-    background-color: rgba(0,0,0,.3);
-    color: #555;
+    background-color: @tab3;
+    color: white;
     border: 0;
     border-color: rgba(0,0,0,.1);
     border-radius: 0;
     margin-right: 10px;
     margin-left: 10px;
-    margin-top: 7px;
+    margin-top: 15px;
+}
 
+.btn.ulink {
+    background-image: none;
 }
 
 .tab-pane > ul > li a {
@@ -398,12 +403,12 @@ a.ulink {
     height: 100%;
 }
 
-#colRight > ul {
+.news > ul {
     list-style-type: none;
     margin-left: 10px;
 }
 
-#colRight > ul li { margin-bottom: 10px; }
+.news > ul li { margin-bottom: 10px; }
 
 #colRight a { color: @tab1; }
 
@@ -412,7 +417,7 @@ a.ulink {
 }
 
 #colLeft > .nav {
-    margin-top: 120px;
+    margin-top: 140px;
     padding-left: 0;
     width: 180px;
 }
@@ -445,9 +450,10 @@ a.ulink {
 }
 
 #colRight { text-align: justify; }
+.news { text-align: left; }
 
-h2.logo { font-size: 49px; }
-h3.logo { font-size: 39px; }
+h2.logo { font-size: 20px; margin-top: -17px; margin-left: 50px;}
+h3.logo { font-size: 15px; font-style: italic; margin-top: -45px; margin-left: 50px;}
 
 
 h2,h3 {
@@ -474,3 +480,5 @@ hr {
     color: white;
     padding-left: 5px;
 }
+
+.navbar-search { margin-top: 15px; }

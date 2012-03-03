@@ -1,5 +1,5 @@
 $(document).ready(function() {
- $('#slider').nivoSlider({
+ $('.slider').nivoSlider({
  	effect: 'fade',
  	animSpeed: 500,
  	pauseTime: 10000,
